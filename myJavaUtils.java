@@ -40,4 +40,20 @@ public class myUtil{
   //大神代码
   //if(n < 0 || n > 12) throw new IllegalArgumentException("Useless fuffery!");
   //return n <= 1 ? 1 : n * factorial(n - 1);
+  
+  //反转字符串
+  public static String revertString(String s){
+	  char[] ch = s.toCharArray();
+	  char[] n = new char[ch.length];
+	  for(int i=0;i<ch.length;i++){
+		  n[i]=ch[ch.length-i-1];
+	  }
+	  return String.valueOf(n);
+  }
+  //public static String reverse3(String s) {
+  //char[] array = s.toCharArray();
+  //String reverse = "";
+  //for (int i = array.length - 1; i >= 0; i--)
+  //reverse += array[i];
+  //return reverse;
 }
