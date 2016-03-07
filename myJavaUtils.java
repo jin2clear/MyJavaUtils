@@ -50,6 +50,53 @@ public class myUtil{
 	  }
 	  return String.valueOf(n);
   }
+  
+  public static void yuanyin(String s){
+	  char[] ch = s.toLowerCase().toCharArray();
+	  int ca=0,ce=0,ci=0,co=0,cu=0;
+	  for(char c : ch){
+		  switch(c){
+			  case 'a':
+				ca++;
+				break;
+			  case 'e':
+				ce++;
+				break;
+			  case 'i':
+				ci++;
+				break;
+			  case 'o':
+				co++;
+				break;
+			  case 'u':
+				cu++;
+				break;
+			  default:
+			   
+		  }
+	  }
+	  System.out.println("sum:" + (ca+ce+ci+co+cu));
+	  System.out.println("a:" + ca);
+	  System.out.println("e:" + ce);
+	  System.out.println("i:" + ci);
+	  System.out.println("o:" + co);
+	  System.out.println("u:" + cu);
+  }
+  
+  //panduanhuiwen
+  public static boolean huiwen(String s){
+	  boolean flag=true;
+	  char[] ch = s.toCharArray();
+	  for(int i=0;i<ch.length/2;i++){
+	  if(ch[i]!=ch[ch.length-1-i]){
+		  flag=false;
+	      break;
+	  }
+	  else
+	  {continue;}
+	  }
+	  return flag;
+  }
   //public static String reverse3(String s) {
   //char[] array = s.toCharArray();
   //String reverse = "";
