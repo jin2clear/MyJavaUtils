@@ -19,3 +19,6 @@
   esac
 6)ftp 192.168.1.1
   sftp root@192.168.1.1 22
+7) curl -s http://ipecho.net/plain      -------输出公网IP
+8）安装好Apache需要把防火墙关闭：service iptables stop  
+   开机不自启：chkconfig iptables off
