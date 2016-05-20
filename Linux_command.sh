@@ -22,3 +22,16 @@
 7) curl -s http://ipecho.net/plain      -------输出公网IP
 8）安装好Apache需要把防火墙关闭：service iptables stop  
    开机不自启：chkconfig iptables off
+9）FTP登录
+cd /crmdata/ibossproc/mpay/APAYlocalWorkDir/
+ftp -n -i 10.1.140.123  <<!
+user ftp2501 ftp2501
+cd /outgoing/APAY/
+bi
+prompt off
+mget APAYCZ*.gz
+pwd
+ls -l
+bye
+!
+find ./ -name "*.gz" |xargs gzip -df
