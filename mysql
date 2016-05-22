@@ -1,0 +1,4 @@
+ 1）使mysql具有远访问能力：mysql>grant all privileges on *.* to root @"%" identified by "root";
+ 2）初始化root用户密码：mysqladmin -u root password "root"
+ 3）新增用户 mysql>insert into mysql.user(Host,User,Password) values("localhost","test",password("1234"));
+             mysql>flush privileges;
