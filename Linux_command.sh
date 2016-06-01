@@ -35,3 +35,4 @@ ls -l
 bye
 !
 find ./ -name "*.gz" |xargs gzip -df
+10)开机字符自定义界面：/etc/motd
